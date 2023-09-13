@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "basket-api.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/basket-api.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/basket-api.Service.dll": {}
+        }
       }
     }
   },
@@ -429,11 +439,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "basket-api.Service/1.0.0": {
+      "type": "project",
+      "path": "../basket-api.Service/basket-api.Service.csproj",
+      "msbuildProject": "../basket-api.Service/basket-api.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "basket-api.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -462,7 +478,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.Service.csproj": {
+              "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.Service.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

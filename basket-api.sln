@@ -5,6 +5,12 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basket-api", "basket-api\basket-api.csproj", "{4D50CA89-4048-4E16-A9BA-9E7150B20582}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basket-api.domain", "basket-api.domain\basket-api.domain.csproj", "{A4D71407-2F61-405E-9034-868E7D7676FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basket-api.Repository", "basket-api.data\basket-api.Repository.csproj", "{5424B051-9881-4840-8F2B-75504F62033A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "basket-api.Service", "basket-api.Service\basket-api.Service.csproj", "{21F99130-C0BA-4A19-A612-090C7F48A83E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{4D50CA89-4048-4E16-A9BA-9E7150B20582}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D50CA89-4048-4E16-A9BA-9E7150B20582}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D50CA89-4048-4E16-A9BA-9E7150B20582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D71407-2F61-405E-9034-868E7D7676FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D71407-2F61-405E-9034-868E7D7676FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D71407-2F61-405E-9034-868E7D7676FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D71407-2F61-405E-9034-868E7D7676FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5424B051-9881-4840-8F2B-75504F62033A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5424B051-9881-4840-8F2B-75504F62033A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5424B051-9881-4840-8F2B-75504F62033A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5424B051-9881-4840-8F2B-75504F62033A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F99130-C0BA-4A19-A612-090C7F48A83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F99130-C0BA-4A19-A612-090C7F48A83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F99130-C0BA-4A19-A612-090C7F48A83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F99130-C0BA-4A19-A612-090C7F48A83E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
