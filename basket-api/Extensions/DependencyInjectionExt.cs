@@ -1,5 +1,6 @@
-﻿using basket_api.Service;
+﻿using basket_api.Service.Orders;
 using basket_api.Service.Orders.Interfaces;
+using basket_api.Service.Products;
 using basket_api.Service.Products.Interfaces;
 
 namespace basket_api.Extensions

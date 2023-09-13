@@ -89,9 +89,22 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "basket-api.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/basket-api.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/basket-api.domain.dll": {}
+        }
+      },
       "basket-api.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "basket-api.domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/basket-api.Service.dll": {}
         },
@@ -439,6 +452,11 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "basket-api.domain/1.0.0": {
+      "type": "project",
+      "path": "../basket-api.domain/basket-api.domain.csproj",
+      "msbuildProject": "../basket-api.domain/basket-api.domain.csproj"
     },
     "basket-api.Service/1.0.0": {
       "type": "project",

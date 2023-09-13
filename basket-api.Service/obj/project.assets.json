@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "basket-api.domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/basket-api.domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/basket-api.domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "basket-api.domain/1.0.0": {
+      "type": "project",
+      "path": "../basket-api.domain/basket-api.domain.csproj",
+      "msbuildProject": "../basket-api.domain/basket-api.domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "basket-api.domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\elton\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\basket-api.domain.csproj": {
+              "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\basket-api.domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

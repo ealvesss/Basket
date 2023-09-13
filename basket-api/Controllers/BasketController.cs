@@ -1,12 +1,41 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using basket_api.Service.Products.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.Contracts;
 
 namespace basket_api.Controllers
 {
-    public class BasketController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class BasketController : ControllerBase
     {
-        public IActionResult Index()
+        private readonly IProduct _productService;
+
+        public BasketController(IProduct productService) { 
+            this._productService = productService;
+        }
+
+        [HttpPost("addProduct/")]
+        public string AddProduct(int id)
         {
-            return View();
+            return  _productService.AddProductToBasket(id);
+        }
+
+        [HttpDelete("removeProduct/")]
+        public string RemoveProduct(int id)
+        {
+           return _productService.RemoveProductFromBasket(id);
+        }
+
+        [HttpPost("increaseQuantity/")]
+        public string  IncreaseQuantity(int quantity, int productId)
+        {
+            return _productService.IncreaseQuantity(quantity, productId);
+        }
+
+        [HttpDelete("decreaseQuantity/")]
+        public string DecreaseQuantity(int quantity, int productId)
+        {
+            return _productService.DecreaseQuantity(quantity, productId);
         }
     }
 }
