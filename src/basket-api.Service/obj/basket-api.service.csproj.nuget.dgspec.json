@@ -1,0 +1,200 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\basket-api.repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\basket-api.repository.csproj",
+        "projectName": "basket-api.repository",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\basket-api.repository.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\Orders.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\Orders.Application.csproj",
+        "projectName": "Orders.Application",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\Orders.Application.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.service.csproj",
+        "projectName": "basket-api.service",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\basket-api.service.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\basket-api.repository.csproj": {
+                "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.data\\basket-api.repository.csproj"
+              },
+              "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\Orders.Application.csproj": {
+                "projectPath": "C:\\Users\\elton\\source\\repos\\basket-api\\basket-api.domain\\Orders.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

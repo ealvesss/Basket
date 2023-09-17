@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Eqfo5mJg78nA3FIXP/aHtje0dYisHVqIBG5HS/oLBKZ3KR6046RUV4CS56LNV+t1JOkcj+sBEXKAp6T+WfsF2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

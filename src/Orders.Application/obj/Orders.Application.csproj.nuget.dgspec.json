@@ -1,0 +1,194 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj",
+        "projectName": "Orders.Application",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj"
+              },
+              "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj": {
+                "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj",
+        "projectName": "Orders.Domain",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj",
+        "projectName": "Orders.Infra",
+        "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj",
+        "packagesPath": "C:\\Users\\elton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\elton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj": {
+                "projectPath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Domain\\Orders.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
