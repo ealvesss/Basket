@@ -1,24 +1,25 @@
-﻿using basket_api.Service.Products.Interfaces;
-using Orders.Application.Interfaces;
+﻿
 using Orders.Domain.Entities.Products;
+using Orders.Domain.Interfaces;
+using Orders.Domain.Products.Interfaces;
 
 namespace Orders.Domain.Service.ProductService
 {
     public class ProductService : IProductService
     {
-         readonly IImpactRepository _repository;
+        readonly IProductClient _repository;
 
-        public ProductService(IImpactRepository repo)
+        public ProductService(IProductClient repo)
         {
             _repository = repo;
         }
 
 
-        public async Task<List<Product>> GetProducts()
+        public async Task<IEnumerable<Product>> GetProducts()
         {
 
-            var test = await _repository.GetAllProducts();
-            return null;
+            var result = await _repository.GetAllProducts();
+            return result;
         }
     }
 }

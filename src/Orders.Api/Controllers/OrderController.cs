@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Orders.Application.Dtos;
-using Orders.Application.Services.Interfaces;
 
-namespace basket_api.Controllers
+namespace Orders.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -11,7 +9,7 @@ namespace basket_api.Controllers
     public class OrderController : ControllerBase
     {
 
-      
+
 
     }
 }

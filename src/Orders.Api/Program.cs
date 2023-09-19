@@ -1,5 +1,7 @@
-using basket_api.Extensions;
+using AutoMapper;
 using Microsoft.OpenApi.Models;
+using Orders.Api.Extensions;
+using Orders.Application.AutoMapper.Profiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +31,14 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
+
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new ProductProfile());
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 var app = builder.Build();
 

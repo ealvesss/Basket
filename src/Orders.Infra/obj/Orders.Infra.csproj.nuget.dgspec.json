@@ -103,6 +103,10 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[110.2.0, )"

@@ -1,28 +1,30 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Orders.Application.Dtos;
+﻿using Microsoft.AspNetCore.Mvc;
+using Orders.Application.Dtos.Responses;
 using Orders.Application.Services.Interfaces;
 
-namespace basket_api.Controllers
+namespace Orders.Api.Controllers
 {
 
     [ApiController]
     [Route("[controller]")]
-    [Authorize]
     public class ProductController : Controller
     {
         readonly IProductAppService _prodService;
+        readonly ILogger<ProductController> _logger;
 
-        public ProductController(IProductAppService prodService)
+        public ProductController(IProductAppService prodService, ILogger<ProductController> logger)
         {
             _prodService = prodService;
+            _logger = logger;
         }
 
         [HttpPost("getProducts")]
-        public Task<List<ProductDto>> SubmitOrder()
+        public async Task<ProductsResponseDto> SubmitOrder(int page, int size)
         {
-            //todo: make way better to return data
-            return _prodService.GetProducts();
+            
+            var result = await _prodService.GetProducts(page, size);
+            _logger.LogInformation($"GetProducts called with result of {result.Items!.Count()} products.");
+            return result;
         }
     }
 }

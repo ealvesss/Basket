@@ -1,9 +1,7 @@
-﻿using Orders.Domain.Service;
-
-namespace basket_api.Service.Orders
+﻿namespace Orders.Infra.Orders
 {
-    public class OrderService 
+    public class OrderService
     {
-       
+
     }
 }

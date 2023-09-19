@@ -1,4 +1,4 @@
-﻿namespace basket_api
+﻿namespace Orders.Api
 {
     public class Settings
     {

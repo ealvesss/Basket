@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "basket_api": {
+    "Orders.Api": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

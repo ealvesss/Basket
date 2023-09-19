@@ -1,9 +1,9 @@
-﻿using Orders.Application.Dtos;
+﻿using Orders.Application.Dtos.Responses;
 
 namespace Orders.Application.Services.Interfaces
 {
     public interface IProductAppService
     {
-        Task<List<ProductDto>> GetProducts();
+        Task<ProductsResponseDto> GetProducts(int page, int size);
     }
 }

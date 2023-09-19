@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ONTx1Ftede09scxlFi/Lmr+85Q4Ke2foxmTmX255gZ5UcbRp6pXzAlxZ6eNhtAheoZfJBaucPrbAOicKdkaPSw==",
+  "dgSpecHash": "2E8rsJ+NkKzCWjSJ1b2kZVNpTtKHNSVt0+s6Mssed4LyQe1HWvxybTjuQgkPQfyC8eb9RhAm+XcdLRtOk9USJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Infra\\Orders.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

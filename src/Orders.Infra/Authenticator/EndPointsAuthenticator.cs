@@ -4,12 +4,12 @@ using System.Text.Json.Serialization;
 
 namespace Orders.Api.Authenticator
 {
-    public class ImpactAuthenticator : AuthenticatorBase
+    public class EndPointsAuthenticator : AuthenticatorBase
     {
-        private readonly string _baseUrl;
-        private readonly string _email;
+        readonly string _baseUrl;
+        readonly string _email;
 
-        public ImpactAuthenticator(String baseUrl, String email)
+        public EndPointsAuthenticator(String baseUrl, String email)
             : base("")
         {
             _baseUrl = baseUrl;
@@ -24,24 +24,27 @@ namespace Orders.Api.Authenticator
 
         async Task<string> GetToken()
         {
-            var client = new RestClient(_baseUrl);
+            var client = new RestClient(new Uri(_baseUrl), null, null, null, true);
             var request = new RestRequest("/Login");
-            var obj = new { email = "eltim.alves@gmail.com" };
 
-            request.AddBody(obj, ContentType.Json);
+            try
+            {
+                request.AddJsonBody($"{{ \"email\" : \"{_email}\" }}");
+                var response = await client.PostAsync<TokenResponse>(request);
+                return response!.Token;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-            var response = await client.PostAsync<TokenResponse>(request);
-
-            Console.WriteLine(response.Token);
-
-            return response.Token;
-
+            return null;
         }
 
         record TokenResponse
         {
             [JsonPropertyName("token")]
-            public string Token { get; init; }
+            public string? Token { get; init; }
         }
     }
 }

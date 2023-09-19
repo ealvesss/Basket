@@ -1,6 +1,6 @@
 ﻿namespace Orders.Infra.Authenticator.Interfaces
 {
-    public interface IImpactAuthenticator
+    public interface IEndPointsAuthenticator
     {
     }
 }

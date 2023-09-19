@@ -1,7 +1,7 @@
-﻿namespace Orders.Infra.Orders.Interfaces
+﻿namespace Orders.Domain.Orders.Interfaces
 {
     public interface IOrderService
     {
-        
+
     }
 }

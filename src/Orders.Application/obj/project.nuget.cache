@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Eqfo5mJg78nA3FIXP/aHtje0dYisHVqIBG5HS/oLBKZ3KR6046RUV4CS56LNV+t1JOkcj+sBEXKAp6T+WfsF2w==",
+  "dgSpecHash": "qLaagexeG5RAouw8xbLEfctXFr62CKPS/69FWnp6kB6oiGweGZG6/Sz5tAiCVqpY3YuCVxxg9fGORwnu3io3Iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\elton\\source\\repos\\Orders\\src\\Orders.Application\\Orders.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\elton\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
     "C:\\Users\\elton\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
