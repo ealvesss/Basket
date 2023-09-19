@@ -19,11 +19,10 @@ namespace Orders.Api.Controllers
         }
 
         [HttpPost("getProducts")]
-        public async Task<ProductsResponseDto> SubmitOrder(int page, int size)
+        public async Task<ProductsResponseDto> SubmitOrder(int page, int pageSize)
         {
-            
-            var result = await _prodService.GetProducts(page, size);
-            _logger.LogInformation($"GetProducts called with result of {result.Items!.Count()} products.");
+            var result = await _prodService.GetProducts(page, pageSize);
+            _logger.LogInformation($"{ DateTime.UtcNow }: GetProducts called with result of { result.Items!.Count() } products. page: { page }, pageSize: { pageSize }");
             return result;
         }
     }

@@ -12,6 +12,7 @@ namespace Orders.Infra.Repositories
         readonly IConfiguration _config;
         readonly RestClient _client;
         readonly ILogger<ProductClient> _logger;
+
         public ProductClient(IConfiguration config, ILogger<ProductClient> logger)
         {
             _config = config;
@@ -31,14 +32,14 @@ namespace Orders.Infra.Repositories
             try
             {
                 response = await _client.GetJsonAsync<List<Product>>("/GetAllProducts");
-                _logger.LogInformation($"GetAllProducts called with result of {response!.Count()} products.");
+                _logger.LogInformation($"{DateTime.UtcNow}: GetAllProducts called with result of {response!.Count()} products.");
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error on ProductClient.GetAllProducts");
+                _logger.LogError(ex, $"{DateTime.UtcNow}: Error on ProductClient.GetAllProducts");
             }
 
-            return await Task.FromResult(response == null ? new List<Product>() : response.OrderBy(x => x.Stars).Take(100));
+            return await Task.FromResult(response == null ? new List<Product>() : response.OrderBy(x => x.Stars).OrderBy(order => order.Price).Take(100));
         }
 
         public void Dispose()
