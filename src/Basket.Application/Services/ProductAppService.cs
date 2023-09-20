@@ -36,7 +36,7 @@ namespace Basket.Application.Services
 
         public async Task<ProductsResponseDto<ProductDto>> GetPaginated(int page, int pageSize)
         {
-            if (pageSize > 1000) return await Task.FromResult(new ProductsResponseDto<ProductDto>() { error = new Error() { message = "Page size should be lower than 1000" } });
+            if (pageSize > 1000) return await Task.FromResult(new ProductsResponseDto<ProductDto>() { error = new Error() { Message = "Page size should be lower than 1000" } });
 
             var prodResult = await _productService.GetAll();
             

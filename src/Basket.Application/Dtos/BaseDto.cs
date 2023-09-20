@@ -24,9 +24,9 @@ namespace Basket.Application.Dtos
     {
         public Error()
         {
-            message = string.Empty;
+            Message = string.Empty;
         }
 
-        public string? message { get; set; }
+        public string Message { get; set; }
     }
 }
